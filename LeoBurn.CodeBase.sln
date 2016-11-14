@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{2C819C2C-0713-416C-9088-3A7658965C0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{87F3BC4D-7F96-43E4-A730-5AE347BBC973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton.Pattern", "Singleton.Pattern\Singleton.Pattern.csproj", "{F7EE4C66-446B-45AE-AAE9-B45E79487638}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Tests", "_Tests", "{C04EE30F-A832-4195-9E06-28D1D5C534E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Tests", "Patterns.Tests\Patterns.Tests.csproj", "{5C0272B1-B51D-43BC-B773-3EA7CE0AED01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7EE4C66-446B-45AE-AAE9-B45E79487638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7EE4C66-446B-45AE-AAE9-B45E79487638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7EE4C66-446B-45AE-AAE9-B45E79487638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7EE4C66-446B-45AE-AAE9-B45E79487638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0272B1-B51D-43BC-B773-3EA7CE0AED01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0272B1-B51D-43BC-B773-3EA7CE0AED01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0272B1-B51D-43BC-B773-3EA7CE0AED01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0272B1-B51D-43BC-B773-3EA7CE0AED01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7EE4C66-446B-45AE-AAE9-B45E79487638} = {2C819C2C-0713-416C-9088-3A7658965C0C}
+		{5C0272B1-B51D-43BC-B773-3EA7CE0AED01} = {C04EE30F-A832-4195-9E06-28D1D5C534E5}
+	EndGlobalSection
+EndGlobal
