@@ -58,6 +58,10 @@
       <Project>{f7ee4c66-446b-45ae-aae9-b45e79487638}</Project>
       <Name>Singleton.Pattern</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TemplateMethod.Pattern\TemplateMethod.Pattern.csproj">
+      <Project>{889217e0-ee95-49cb-993b-4955e5851c1e}</Project>
+      <Name>TemplateMethod.Pattern</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

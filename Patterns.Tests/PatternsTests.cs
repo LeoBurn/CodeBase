@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Singleton.Pattern;
+using TemplateMethod.Pattern.Employee;
+using TemplateMethod.Pattern.Worker;
 
 namespace Patterns.Tests
 {
@@ -23,6 +25,27 @@ namespace Patterns.Tests
 
       //Assert
       Assert.AreEqual(serviceOneHashCode,serviceTwoHashCode);
+    }
+
+    [TestMethod]
+    public void ShouldTestTemplateMethodPattern()
+    {
+      //Arrange
+      Employee employee1 = new Mechanic();
+      Employee employee2 = new Plumber();
+
+      IWorker mechanicWorker;
+      IWorker plumberWorker;
+
+      //Act
+      mechanicWorker = employee1.DoWork();
+      plumberWorker = employee2.DoWork();
+
+      //Assert
+      Assert.AreEqual(mechanicWorker.GetType(),typeof(MechanicWorker));
+      Assert.AreEqual(plumberWorker.GetType(), typeof(PlumberWorker));
+
+
     }
   }
 }
