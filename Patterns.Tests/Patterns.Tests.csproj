@@ -54,6 +54,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Adapter.Pattern\Adapter.Pattern.csproj">
+      <Project>{99c808e1-da44-497c-b3fa-5d335d625797}</Project>
+      <Name>Adapter.Pattern</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Singleton.Pattern\Singleton.Pattern.csproj">
       <Project>{f7ee4c66-446b-45ae-aae9-b45e79487638}</Project>
       <Name>Singleton.Pattern</Name>
