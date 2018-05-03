@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Adapter.Pattern.Dog
 {
-  public interface IDog
-  {
-    string Bark { get; }
+    public interface IDog
+    {
+        string Bark { get; }
 
-    string Walk { get; }
-  }
+        string Walk { get; }
+    }
 }

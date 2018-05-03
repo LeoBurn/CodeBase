@@ -10,24 +10,24 @@ namespace Singleton.Pattern
 {
     public class Service
     {
-      private static object syncRoot = new object();
-      private static volatile Service instance;
+        private static object syncRoot = new object();
+        private static volatile Service instance;
 
-      public static Service Instance
-      {
-        get
+        public static Service Instance
         {
-          //DoubleCheck Null because Multi-Threading
-          if (instance == null)
-          {
-            lock (syncRoot)
+            get
             {
-              if(instance == null)
-              instance = new Service();
+                //DoubleCheck Null because Multi-Threading
+                if (instance == null)
+                {
+                    lock (syncRoot)
+                    {
+                        if (instance == null)
+                            instance = new Service();
+                    }
+                }
+                return instance;
             }
-          }
-          return instance;
         }
-      }
     }
 }

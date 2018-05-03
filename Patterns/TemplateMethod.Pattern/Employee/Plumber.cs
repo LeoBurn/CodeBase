@@ -7,11 +7,11 @@ using TemplateMethod.Pattern.Worker;
 
 namespace TemplateMethod.Pattern.Employee
 {
-  public class Plumber : Employee
-  {
-    public override IWorker DoWork()
+    public class Plumber : Employee
     {
-      return new PlumberWorker();
+        public override IWorker DoWork()
+        {
+            return new PlumberWorker();
+        }
     }
-  }
 }
