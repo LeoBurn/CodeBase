@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Patterns.Tests</RootNamespace>
     <AssemblyName>Patterns.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,15 +55,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Adapter.Pattern\Adapter.Pattern.csproj">
+    <ProjectReference Include="..\..\Patterns\Adapter.Pattern\Adapter.Pattern.csproj">
       <Project>{99c808e1-da44-497c-b3fa-5d335d625797}</Project>
       <Name>Adapter.Pattern</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Singleton.Pattern\Singleton.Pattern.csproj">
+    <ProjectReference Include="..\..\Patterns\Singleton.Pattern\Singleton.Pattern.csproj">
       <Project>{f7ee4c66-446b-45ae-aae9-b45e79487638}</Project>
       <Name>Singleton.Pattern</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TemplateMethod.Pattern\TemplateMethod.Pattern.csproj">
+    <ProjectReference Include="..\..\Patterns\TemplateMethod.Pattern\TemplateMethod.Pattern.csproj">
       <Project>{889217e0-ee95-49cb-993b-4955e5851c1e}</Project>
       <Name>TemplateMethod.Pattern</Name>
     </ProjectReference>

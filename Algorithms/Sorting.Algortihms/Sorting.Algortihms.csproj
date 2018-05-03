@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99C808E1-DA44-497C-B3FA-5D335D625797}</ProjectGuid>
+    <ProjectGuid>{E95F07FC-53F2-4684-80E9-AB429947C47B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Adapter.Pattern</RootNamespace>
-    <AssemblyName>Adapter.Pattern</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Sorting.Algortihms</RootNamespace>
+    <AssemblyName>Sorting.Algortihms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,11 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bear\DogAdapter.cs" />
-    <Compile Include="Bear\IBear.cs" />
-    <Compile Include="Bear\PolarBear.cs" />
-    <Compile Include="Dog\BorderCollie.cs" />
-    <Compile Include="Dog\IDog.cs" />
+    <Compile Include="BubleSort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
