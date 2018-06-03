@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BinarySearchTreeStructure;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BinarySearchTree.Tests
@@ -15,7 +16,7 @@ namespace BinarySearchTree.Tests
         {
             //Arrange
             int value = 3;
-            BinarySearchTree bst = new BinarySearchTree();
+            BinarySearchTreeStructure.BinarySearchTree bst = new BinarySearchTreeStructure.BinarySearchTree();
             
             //Act
             bst.Insert(value);
@@ -29,7 +30,7 @@ namespace BinarySearchTree.Tests
         public void ShouldGetSortedValuesFromBinarySearchTree()
         {
             //Arrange
-            BinarySearchTree bst = new BinarySearchTree();
+            BinarySearchTreeStructure.BinarySearchTree bst = new BinarySearchTreeStructure.BinarySearchTree();
             Node root = new Node()
             {
                 Data = 4,

@@ -7,8 +7,8 @@
     <ProjectGuid>{C1CC165C-3AD1-4AC1-8BC3-459D07A8EE6D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BinarySearchTree</RootNamespace>
-    <AssemblyName>BinarySearchTree</AssemblyName>
+    <RootNamespace>BinarySearchTreeStructure</RootNamespace>
+    <AssemblyName>BinarySearchTreeStructure</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

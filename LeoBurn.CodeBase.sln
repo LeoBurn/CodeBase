@@ -23,9 +23,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod.Pattern", "P
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structures", "Structures", "{1C519314-D95C-4607-8BFE-9B743C4F9276}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "Structures\BinarySearchTree\BinarySearchTree.csproj", "{C1CC165C-3AD1-4AC1-8BC3-459D07A8EE6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTreeStructure", "Structures\BinarySearchTree\BinarySearchTreeStructure.csproj", "{C1CC165C-3AD1-4AC1-8BC3-459D07A8EE6D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree.Tests", "Test\BinarySearchTree.Tests\BinarySearchTree.Tests.csproj", "{83F72C8D-5387-41E5-A564-782FECC2F04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapStructure", "Structures\HeapStructure\HeapStructure.csproj", "{25A91D9A-BE8C-41BB-91AC-7BDB00CB6EF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structures.Tests", "Test\Structures.Tests\Structures.Tests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,14 @@ Global
 		{83F72C8D-5387-41E5-A564-782FECC2F04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83F72C8D-5387-41E5-A564-782FECC2F04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83F72C8D-5387-41E5-A564-782FECC2F04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25A91D9A-BE8C-41BB-91AC-7BDB00CB6EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A91D9A-BE8C-41BB-91AC-7BDB00CB6EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A91D9A-BE8C-41BB-91AC-7BDB00CB6EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A91D9A-BE8C-41BB-91AC-7BDB00CB6EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDF4429-251A-416D-BB68-93F227191BCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +90,8 @@ Global
 		{889217E0-EE95-49CB-993B-4955E5851C1E} = {2C819C2C-0713-416C-9088-3A7658965C0C}
 		{C1CC165C-3AD1-4AC1-8BC3-459D07A8EE6D} = {1C519314-D95C-4607-8BFE-9B743C4F9276}
 		{83F72C8D-5387-41E5-A564-782FECC2F04C} = {C04EE30F-A832-4195-9E06-28D1D5C534E5}
+		{25A91D9A-BE8C-41BB-91AC-7BDB00CB6EF1} = {1C519314-D95C-4607-8BFE-9B743C4F9276}
+		{8EDF4429-251A-416D-BB68-93F227191BCF} = {C04EE30F-A832-4195-9E06-28D1D5C534E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A6CD28C-D9EF-47EB-AD5F-F94CBFAB80EF}
