@@ -40,7 +40,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HeapTest.cs" />
+    <Compile Include="MaxHeapTest.cs" />
+    <Compile Include="MinHeapTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

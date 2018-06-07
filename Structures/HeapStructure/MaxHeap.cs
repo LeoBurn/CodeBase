@@ -12,9 +12,8 @@ namespace HeapStructure
         {
         }
 
-        public override void HeapifyDown()
-        {
-            var index = 0;
+        public override void HeapifyDown(int index)
+        { 
 
             while (HasLeftChild(index))
             {
@@ -22,21 +21,19 @@ namespace HeapStructure
                 if (HasRightChild(index) && RightChild(index) > LeftChild(index))
                     bigestValueIdx = RightChildIdx(index);
 
-                if (Elements[index] < Elements[bigestValueIdx])
+                if (Elements[index] > Elements[bigestValueIdx])
                     break;
                 else
                 {
-                    Swap(Elements[index], Elements[bigestValueIdx]);
+                    Swap(index, bigestValueIdx);
                 }
                 index = bigestValueIdx;
             }
         }
 
-        public override void HeapifyUp()
+        public override void HeapifyUp(int index)
         {
-            var index = Size - 1;
-
-            while (HasParent(index) && Elements[index] < LeftChild(index))
+            while (HasParent(index) && Elements[index] > Parent(index))
             {
                 Swap(index, ParentIdx(index));
                 index = ParentIdx(index);

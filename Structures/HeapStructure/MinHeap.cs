@@ -12,10 +12,8 @@ namespace HeapStructure
         {
         }
 
-        public override void HeapifyDown()
+        public override void HeapifyDown(int index)
         {
-            int index = 0;
-
             while (HasLeftChild(index))
             {
                 int smallValueIndex = LeftChildIdx(index);
@@ -26,21 +24,20 @@ namespace HeapStructure
                     break;
                 else
                 {
-                    Swap(Elements[index],Elements[smallValueIndex]);
+                    Swap(index,smallValueIndex);
                 }
                 index = smallValueIndex;
             }
         }
 
-        public override void HeapifyUp()
+        public override void HeapifyUp(int index)
         {
-            int index = Size - 1;
-
-            while (HasParent(index) && Elements[index] > Parent(index))
+            while (HasParent(index) && Elements[index] < Parent(index))
             {
                 Swap(index, ParentIdx(index));
                 index = ParentIdx(index);
             }
         }
+       
     }
 }

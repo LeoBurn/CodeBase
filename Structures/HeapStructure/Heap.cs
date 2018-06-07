@@ -34,7 +34,7 @@ namespace HeapStructure
 
             Elements[Size] = element;
             ++Size;
-            HeapifyUp();
+            HeapifyUp(Size-1);
         }
         
         /// <summary>
@@ -57,17 +57,43 @@ namespace HeapStructure
             int item = Elements[0];
             Elements[0] = Elements[Size - 1];
             --Size;
-            HeapifyDown();
+            HeapifyDown(0);
             return item;
+        }
+
+        /// <summary>
+        /// Delete Item specified and Heapify
+        /// </summary>
+        /// <param name="element"></param>
+        public void Delete(int element)
+        {
+            if (Elements[Size - 1] == element)
+            {
+                --Size;
+                return;
+            }
+
+            for (var i = 0; i < Size; ++i)
+            {
+                if (Elements[i] == element)
+                {
+                    Elements[i] = Elements[Size - 1];
+                    --Size;
+                    HeapifyDown(i);
+                    return;
+                }
+            }
+
         }
 
         public bool IsEmpty => Size == 0;
 
         #region Abstract Members
 
-        public abstract void HeapifyDown();
+        public abstract void HeapifyDown(int index);
 
-        public abstract void HeapifyUp();
+        public abstract void HeapifyUp(int index);
+
 
         #endregion
 
@@ -83,8 +109,8 @@ namespace HeapStructure
         protected int RightChildIdx(int idx) => (idx * 2) + 2;
 
         protected bool HasParent(int idx) => ParentIdx(idx) >= 0;
-        protected bool HasLeftChild(int idx) => LeftChild(idx) < Size;
-        protected bool HasRightChild(int idx) => RightChild(idx) < Size;
+        protected bool HasLeftChild(int idx) => LeftChildIdx(idx) < Size;
+        protected bool HasRightChild(int idx) => RightChildIdx(idx) < Size;
 
         private void GrowUpHeap()
         {
